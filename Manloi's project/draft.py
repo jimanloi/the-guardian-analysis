@@ -19,6 +19,8 @@ for item in rssTheGuardian.root[0].findall('item'):
     delattr(data, "fields.standfirst")
     delattr(data, "fields.trailText")
 
+#------------
+
 with open(file_path, 'r') as file:
     data = json.load(file)
     for key in keys_to_remove:
@@ -29,3 +31,8 @@ with open(file_path, 'r') as file:
             for child_key in child_keys:
                 if child_key in data[parent_key]:
                     del data[parent_key][child_key]
+
+# ------------
+
+keys_to_remove = ["id","sectionId","webUrl","apiUrl","isHosted"]
+nested_keys_to_remove = {"fields":["headline", "standfirst", "trailText","main","body","newspaperPageNumber","wordcount","isInappropriateForSponsorship","isPremoderated","shouldHideAdverts","showInRelatedContent","thumbnail","lang","isLive","charCount","shouldHideReaderRevenue","showAffiliateLinks","bylineHtml","showTableOfContents"]}

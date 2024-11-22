@@ -1,32 +1,57 @@
-import json
-import os
-import pandas as pd
+from datetime import date
+import get_content
+from collections import defaultdict
 
 folder_path = "./tempdata/articles"
+list_of_all_articles = []
 
-articles_list = []
+class GuardianArticle:
+    def __init__(self, article_data_from_json):
+        self.type = article_data_from_json["type"]
+        self.sectionName = article_data_from_json["sectionName"]
+        self.webTitle = article_data_from_json["webTitle"]
+        self.bodyText = article_data_from_json["fields"]["bodyText"]
+        self.date = article_data_from_json.get("webPublicationDate")
+        self.pillarName = article_data_from_json.get("pillarName")
 
-keys_to_remove = ["id","sectionId","webUrl","apiUrl","isHosted"]
-nested_keys_to_remove = {"fields":["headline", "standfirst", "trailText","main","body","newspaperPageNumber","wordcount","isInappropriateForSponsorship","isPremoderated","shouldHideAdverts","showInRelatedContent","thumbnail","lang","isLive","charCount","shouldHideReaderRevenue","showAffiliateLinks","bylineHtml","showTableOfContents"]}
+    def __repr__(self):
+        return (f"{self.type} in {self.sectionName} section : {self.webTitle} published at {self.date}")
 
-for file_name in os.listdir(folder_path):
-    if file_name.endswith(".json"):
-        file_path = os.path.join(folder_path, file_name)
-        with open(file_path, 'r') as file:
-            data = json.load(file)
-            for key in keys_to_remove:
-                if key in data:
-                    del data{key}
-            print(f"Removing key: {key}")
-            for parent_key, child_keys in nested_keys_to_remove.items():
-                if parent_key in data:
-                    for child_key in child_keys:
-                        if child_key in data[parent_key]:
-                            del data[parent_key][child_key]
-            print(f"Removing nested key: {child_keys} from {parent_key}")
-            articles_list.append(data)
-            print(articles_list[0])
+    def get_bodytext(self):
+        return self.bodyText
 
-#df = pd.DataFrame(articles_list)
+    def count_articles_by_section(articles_list):
+        """Count the number of articles in each section."""
+        section_counts = defaultdict(int)
+        for article in list_of_all_articles:
+            if article.sectionName:  # Ensure there's a sectionId
+                section_counts[article.sectionName] += 1
+        return section_counts
 
-#print(df.head())
+
+if __name__ == "__main__":
+    api_key = "e3574d33-be67-451d-bde6-ce32ffa11f78"
+    api_endpoint = 'http://content.guardianapis.com/search'
+    params = {
+        'from-date': "",
+        'to-date': "",
+        'order-by': "newest",
+        'show-fields': 'all',
+        'page-size': 200,
+        'api-key': api_key
+    }
+    start_date = date(2024, 10, 1)
+    end_date = date(2024, 10, 31)
+    get_content.import_data_from_TheGuardian(api_key, api_endpoint, params, start_date, end_date)
+    get_content.get_readable_articles(list_of_all_articles, folder_path, GuardianArticle)
+    for article in list_of_all_articles:
+        print(article)
+
+    section_counts = GuardianArticle.count_articles_by_section(list_of_all_articles)
+    # Print the results
+    print("Article count per section:")
+    for section, count in section_counts.items():
+        print(f"Section: {section}, Article Count: {count}")
+
+
+
