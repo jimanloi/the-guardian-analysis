@@ -1,6 +1,6 @@
 from datetime import date
 import get_content
-from collections import defaultdict
+
 
 folder_path = "./tempdata/articles"
 list_of_all_articles = []
@@ -19,14 +19,6 @@ class GuardianArticle:
 
     def get_bodytext(self):
         return self.bodyText
-
-    def count_articles_by_section(articles_list):
-        """Count the number of articles in each section."""
-        section_counts = defaultdict(int)
-        for article in list_of_all_articles:
-            if article.sectionName:  # Ensure there's a sectionId
-                section_counts[article.sectionName] += 1
-        return section_counts
 
 
 if __name__ == "__main__":
@@ -47,11 +39,14 @@ if __name__ == "__main__":
     for article in list_of_all_articles:
         print(article)
 
-    section_counts = GuardianArticle.count_articles_by_section(list_of_all_articles)
-    # Print the results
-    print("Article count per section:")
-    for section, count in section_counts.items():
-        print(f"Section: {section}, Article Count: {count}")
+# -Make a graph  - to show no.of articles per section
+    list_section_count = []
+    get_content.count_articles_per_section_per_day(list_of_all_articles, list_section_count)
+    print(list_section_count)
 
+date_section_counts = get_content.parse_data(list_section_count)
+# Prepare the data for the stackplot
+days, sections, y_values, section_totals = get_content.prepare_data_for_stackplot(date_section_counts)
 
-
+# Plot the stackplot
+get_content.plot_stackplot(days, sections, y_values, section_totals)
