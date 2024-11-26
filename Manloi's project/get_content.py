@@ -61,10 +61,10 @@ def get_readable_articles(list_to_work_on:[], folder_path, class_of_media):
         if file_name.endswith(".json"):
             file_path = os.path.join(folder_path, file_name)
             with open(file_path, 'r') as file:
-                data_of_the_day = json.load(file)  # TODO il faudra vérifier par la suite que ça reste "news of the day"
+                data_of_the_day = json.load(file)
                 if isinstance(data_of_the_day, list):
                     for article_data in data_of_the_day:
-                        if article_data.get("type") == "article":
+                        if article_data.get("type") == "article":  #filter to have only articles
                             article = class_of_media(article_data)
                             list_to_work_on.append(article)
                 else:

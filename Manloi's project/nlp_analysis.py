@@ -62,7 +62,6 @@ def analyze_sentiment(text):
     # Returns polarity score between -1 (negative) and 1 (positive)
     return blob.sentiment.polarity
 
-
 def word_frequency_in_section(articles, section, word):
     section_articles = filter_articles_by_section(articles, section)
     if not section_articles:
