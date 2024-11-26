@@ -1,11 +1,12 @@
 import re
 import numpy as np
 import itertools
-import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from datetime import datetime
 from collections import defaultdict
 import os
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
 def parse_data(list_to_work_on):
     date_section_counts = defaultdict(lambda: defaultdict(int))
@@ -94,50 +95,58 @@ def plot_stackplot(days, sections, y_values, section_totals):
      """
 
 
-def visualise_sentiment(section, sentiment_scores):
-    """
-        Visualizes the sentiment of articles in the 'World News' and 'US News' sections.
-
-        :param sections: List of section names corresponding to each article.
-        :param sentiment_scores: List of sentiment scores for each article.
-        """
-    # Filter the sentiment scores for "World News" and "US News"
-    world_news_sentiment = [sentiment_scores[i] for i in range(len(sections)) if sections[i] == "World News"]
-    us_news_sentiment = [sentiment_scores[i] for i in range(len(sections)) if sections[i] == "US News"]
-
-    # Calculate the average sentiment for each section
-    avg_world_news_sentiment = sum(world_news_sentiment) / len(world_news_sentiment) if world_news_sentiment else 0
-    avg_us_news_sentiment = sum(us_news_sentiment) / len(us_news_sentiment) if us_news_sentiment else 0
-
-    # Data for plotting
-    sections_to_plot = ["World News", "US News"]
-    average_sentiment = [avg_world_news_sentiment, avg_us_news_sentiment]
-
-    # Create a bar chart
-    plt.bar(sections_to_plot, average_sentiment, color=['blue', 'red'])
-
-    # Add labels and title
-    plt.xlabel('Section')
-    plt.ylabel('Average Sentiment Score')
-    plt.title('Average Sentiment of "World News" vs "US News"')
-
-    plt.savefig("sentiment_score.png")
-
 def plot_keywords(keywords, section, top_n=10, output_dir="wordclouds"):
     plt.figure(figsize=(10, 6))
     words, frequencies = zip(*keywords)
     plt.barh(words, frequencies, color='skyblue')
     plt.xlabel('Frequency')
     plt.ylabel('Keywords')
-    plt.title(f"Top {top_n} Keywords in {section} section")
+    plt.title(f"Top {top_n} Keywords in {section} section in The Guardian\nfrom 1 to 31 October 2024")
     plt.gca().invert_yaxis()  # Invert y-axis to have the highest frequency on top
     plt.tight_layout()
     # Create a unique filename using section name and timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"{section.replace(' ', '_')}_{timestamp}.png"
+    filename = f"{section.replace(' ', '_')}_{timestamp}_plot.png"
     filepath = os.path.join(output_dir, filename)
     plt.savefig(filepath, format="png")
     plt.close()
+    print("plot saved.")
+
+def save_wordcloud(keywords, section_name, output_dir="wordclouds"):
+    """
+    Generate and save a word cloud image from keywords.
+
+    :param keywords: List of tuples (word, frequency).
+    :param section_name: Name of the section (used for filename).
+    :param output_dir: Directory to save the word cloud images.
+    """
+    # Create output directory if it doesn't exist
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # Convert keywords to a dictionary for word cloud generation
+    word_freq = dict(keywords)
+
+    # Generate the word cloud
+    wordcloud = WordCloud(width=800, height=400, background_color="white").generate_from_frequencies(word_freq)
+
+    # Create a unique filename using section name and timestamp
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"{section_name.replace(' ', '_')}_{timestamp}.png"
+    filepath = os.path.join(output_dir, filename)
+    print(f"Filepath: {filepath}")
+
+    # Save the word cloud image
+    try:
+        plt.figure(figsize=(10, 5))
+        plt.imshow(wordcloud, interpolation="bilinear")
+        plt.axis("off")
+        plt.savefig(filepath, format="png")
+        plt.close()
+        print(f"Word cloud saved to: {filepath}")
+    except Exception as e:
+        print(f"Error saving word cloud: {e}")
+
 
 if __name__ == "__main__":
     pass

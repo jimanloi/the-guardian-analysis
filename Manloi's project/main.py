@@ -44,31 +44,30 @@ if __name__ == "__main__":
     quantitative_analyse.count_articles_per_section_per_day(list_of_all_articles, list_section_count)
     print(list_section_count)
     date_section_counts = visualisation.parse_data(list_section_count)
-# Prepare the data for the stackplot
     days, sections, y_values, section_totals = visualisation.prepare_data_for_stackplot(date_section_counts)
-# Plot the stackplot
     visualisation.plot_stackplot(days, sections, y_values, section_totals)
 
-#NLP
+top_keywords_opinion = nlp_analysis.extract_keywords_from_section(list_of_all_articles, "Opinion", 20)
+print(f"Top Keywords for Opinion: {top_keywords_opinion}")
+visualisation.save_wordcloud(top_keywords_opinion, "Opinion")
+visualisation.plot_keywords(top_keywords_opinion, "Opinion")
 
 #mention of a word in a section
-    word_to_find = "harris"
-    number_of_mention = nlp_analysis.word_frequency_in_section(list_of_all_articles,"World news",word_to_find)
-    print(f"Frequency of the word {word_to_find}: {number_of_mention}")
+"""
+word_to_find = "harris"
+number_of_mention = nlp_analysis.word_frequency_in_section(list_of_all_articles,"World news",word_to_find)
+print(f"Frequency of the word {word_to_find}: {number_of_mention}")
 
+top_keywords_world_news = nlp_analysis.extract_keywords_from_section(list_of_all_articles,"World news", 20)
+print("Top Keywords for World News:", top_keywords_world_news)
+visualisation.save_wordcloud(top_keywords_world_news, "World news")
+visualisation.plot_keywords(top_keywords_world_news, "World news")
 
+top_keywords_us_news = nlp_analysis.extract_keywords_from_section(list_of_all_articles, "US news", 20)
+print("Top Keywords for US News:", top_keywords_us_news)
+visualisation.save_wordcloud(top_keywords_us_news, "US news")
+visualisation.plot_keywords(top_keywords_us_news, "US news")
 
-    top_keywords_world_news = nlp_analysis.extract_keywords_from_section(list_of_all_articles,"UK news", 20)
-    print("Top Keywords for World News:", top_keywords_world_news)
-    nlp_analysis.save_wordcloud(top_keywords_world_news, "World news")
-    visualisation.plot_keywords(top_keywords_world_news, "World news")
+"""
 
-    top_keywords_us_news = nlp_analysis.extract_keywords_from_section(list_of_all_articles, "US news", 20)
-    print("Top Keywords for US News:", top_keywords_us_news)
-    nlp_analysis.save_wordcloud(top_keywords_us_news, "US news")
-    visualisation.plot_keywords(top_keywords_us_news, "US news")
-
-        # Generate a word cloud for all articles' body text
-#    all_body_texts = [article.bodyText for article in list_of_all_articles]
- #   nlp_analysis.plot_wordcloud(all_body_texts)
 
