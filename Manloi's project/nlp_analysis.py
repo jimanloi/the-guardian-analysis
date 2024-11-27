@@ -4,7 +4,6 @@ import nltk
 from nltk.corpus import stopwords, words
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.tokenize import word_tokenize
-from textblob.en import Sentiment, sentiment
 
 nltk.download('punkt_tab')
 nltk.download('stopwords')

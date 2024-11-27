@@ -1,8 +1,5 @@
 import csv
 from datetime import date, datetime
-
-from textblob.en import sentiment
-
 import get_content
 import visualisation
 import quantitative_analyse
