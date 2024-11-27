@@ -1,13 +1,18 @@
 
-from textblob import TextBlob
 import spacy
 import nltk
 from nltk.corpus import stopwords, words
+from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.tokenize import word_tokenize
+from textblob.en import Sentiment, sentiment
+
 nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('vader_lexicon')
 from collections import Counter
+import csv
+from datetime import datetime
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -36,9 +41,31 @@ def preprocess_text(text):
 #    print("filtered words = ", filtered_words)
     return filtered_words
 
+def format_date(article):
+    return datetime.strptime(article.date, "%Y-%m-%dT%H:%M:%SZ").strftime("%d/%m/%Y")
 
-def filter_articles_by_section(articles, section):
+#To see how many articles mention the word and save it to a csv
+def find_articles_containing_a_word_to_csv(articles, word_to_find, output_file):
+    with open(output_file, mode="w", newline="")as file:
+        writer = csv.writer(file)
+        writer.writerow(["Section Name", "Date", "Web Title", "Web URL"])
+        counter = 0
+        for article in articles:
+            if word_to_find in article.bodyText.lower():
+                counter += 1
+                format_date(article.date)
+                writer.writerow([article.sectionName, article.date, article.webTitle, article.webUrl])
+    print(f"Exported {counter} articles containing '{word_to_find}' to {output_file}.")
+
+
+def get_bodytexts_in_section(articles, section):
     return [article.bodyText for article in articles if article.sectionName == section]
+    if not articles:
+        print(f"No articles found in the section: {section}")
+        return []
+
+def get_items_in_section(articles, section):
+    return [article for article in articles if article.sectionName == section]
     if not articles:
         print(f"No articles found in the section: {section}")
         return []
@@ -56,14 +83,8 @@ def get_top_keywords(word_counts, top_n):
 def count_word_frequency(tokens):
     return Counter(tokens)
 
-# Sentiment analysis using TextBlob
-def analyze_sentiment(text):
-    blob = TextBlob(text)
-    # Returns polarity score between -1 (negative) and 1 (positive)
-    return blob.sentiment.polarity
-
 def word_frequency_in_section(articles, section, word):
-    section_articles = filter_articles_by_section(articles, section)
+    section_articles = get_bodytexts_in_section(articles, section)
     if not section_articles:
         print(f"No articles found in the section: {section}")
         return 0
@@ -75,15 +96,52 @@ def word_frequency_in_section(articles, section, word):
 
 
 def extract_keywords_from_section(articles, section, top_n=10):
-    section_articles = filter_articles_by_section(articles, section)
-    if not section_articles:
-        print(f"No articles found in the section: {section}")
-        return []
+    section_articles = get_bodytexts_in_section(articles, section)
     all_tokens = tokenized_words(section_articles)
     word_counts = count_word_frequency(all_tokens)
     # Get the most common words
     top_keywords = get_top_keywords(word_counts, top_n)
     return top_keywords
+
+#to analyse the sentiment of articles
+
+def analyse_sentiment_nltk(text):
+    sia = SentimentIntensityAnalyzer()
+    sentiment = sia.polarity_scores(text)
+    return sentiment['compound']
+
+def interpret_sentiment(score):
+    if score > 0.05:
+        return "Positive"
+    elif score < -0.05:
+        return "Negative"
+    else:
+        return "Neutral"
+
+def analyse_sentiment_by_section(articles, section):
+    section_articles = get_items_in_section(articles, section)
+    sentiment_results = []
+    for article in section_articles:
+        sentiment_score = analyse_sentiment_nltk(article.bodyText)
+        classify_sentiment = interpret_sentiment(sentiment_score)
+        sentiment_results.append((article.date, article.sectionName, article.webTitle, sentiment_score, classify_sentiment))
+    return sentiment_results
+
+def export_sentiment_to_csv(sentiment_results, output_file):
+    with open(output_file, mode="w", newline="", encoding="utf-8") as file:
+        writer = csv.writer(file)
+        writer.writerow(["Date", "Section" , "Title", "Sentiment Score", "Sentiment Interpretation"])
+        for date, section, title, score, sentiment in sentiment_results:
+            formatted_date = datetime.strptime(date, "%Y-%m-%dT%H:%M:%SZ").strftime("%d/%m/%Y")
+            writer.writerow([formatted_date, section, title, score, sentiment])
+    print(f"Sentiment analysis results exported to {output_file}")
+
+def number_of_each_sentiment_label(sentiment_results, sentiment_label):
+    counter = 0
+    for date, section, title, score, sentiment in sentiment_results:
+        if sentiment == sentiment_label:
+            counter += 1
+    print(f"Articles with {sentiment_label} sentiment: {counter}")
 
 
 

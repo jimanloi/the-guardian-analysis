@@ -34,7 +34,7 @@ def prepare_data_for_stackplot(date_section_counts):
     sorted_sections = [section for section, _ in sorted_sections]
     total_articles = sum(section_totals.values())
     # Step 2.4: Filter sections with less than 3% content
-    sections_to_include = [section for section in sorted_sections if (section_totals[section] / total_articles) >= 0.03]
+    sections_to_include = [section for section in sorted_sections if (section_totals[section] / total_articles) >= 0.02]
 
     # Step 2.5: Rearrange y_values to match the sorted section order, but only for sections to include
     y_values = []
@@ -78,7 +78,7 @@ def plot_stackplot(days, sections, y_values, section_totals):
     # Show the plot
     plt.tight_layout()
     #  plt.show()
-    plt.savefig("stackplot5.png")
+    plt.savefig("stackplot6.png")
 
     """
     sorted_section_counts = sorted(section_counts.items(), key=lambda x: x[1], reverse=True)
@@ -146,6 +146,9 @@ def save_wordcloud(keywords, section_name, output_dir="wordclouds"):
         print(f"Word cloud saved to: {filepath}")
     except Exception as e:
         print(f"Error saving word cloud: {e}")
+
+
+
 
 
 if __name__ == "__main__":
