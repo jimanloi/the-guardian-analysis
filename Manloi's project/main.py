@@ -52,7 +52,7 @@ if __name__ == "__main__":
 """
 
 #To analysis the sentiment of articles in a section
-section_to_analyse = "Business"
+section_to_analyse = "Environment"
 output_file = f"sentiment_analysis_{section_to_analyse}.csv"
 sentiment_results = nlp_analysis.analyse_sentiment_by_section(list_of_all_articles, section_to_analyse)
 nlp_analysis.export_sentiment_to_csv(sentiment_results, output_file)

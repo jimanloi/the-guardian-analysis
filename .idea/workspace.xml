@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ffe68db-f145-4cd1-9714-e954b8736315" name="Changes" comment="+ sentiment analysis (csv and visualisation)" />
+    <list default="true" id="8ffe68db-f145-4cd1-9714-e954b8736315" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi's project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Environment.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Environment.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -432,7 +436,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732799216541</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="adding all files">
+      <option name="closed" value="true" />
+      <created>1732799676219</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1732799676219</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -477,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Day 7: initial commit" />
     <MESSAGE value="Revert &quot;Day 7: initial commit&quot;&#10;&#10;This reverts commit 818bd0e0" />
     <MESSAGE value="Revert &quot;Day 7: commit hello world!" />
     <MESSAGE value="Day 7: account manager v3 improved" />
@@ -502,7 +513,8 @@
     <MESSAGE value="+ articles that contain 'belgium'" />
     <MESSAGE value="+ sentiment analysis" />
     <MESSAGE value="+ sentiment analysis (csv and visualisation)" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ sentiment analysis (csv and visualisation)" />
+    <MESSAGE value="adding all files" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding all files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
