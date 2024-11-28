@@ -148,8 +148,32 @@ def save_wordcloud(keywords, section_name, output_dir="wordclouds"):
         print(f"Error saving word cloud: {e}")
 
 
+def visualise_sentiment_pie_chart(sentiment_results, section_to_analyse):
+    sentiment_counts = {"Positive": 0,"Neutral": 0, "Negative": 0}
+    for _, _, _, _, sentiment, _ in sentiment_results:
+        sentiment_counts[sentiment] += 1
+    # Data for the pie chart
+    labels = sentiment_counts.keys()
+    sizes = sentiment_counts.values()
+    colors = ['green', 'yellow', 'red']
+    #explode = (0.1, 0, 0)  # Slightly "explode" the positive section for emphasis
 
+    # Create the pie chart
+    plt.figure(figsize=(8, 6))
+    plt.pie(
+        sizes,
+        labels=[f"{label} ({count})" for label, count in zip(labels, sizes)],  # Add counts to labels
+        autopct='%1.1f%%',  # Display percentage
+        startangle=140,  # Rotate chart for better layout
+        colors=colors,
+    )
 
+    # Add a title
+    plt.title(f'Sentiment Analysis Results in {section_to_analyse} Section')
+
+    # Display the pie chart
+    plt.savefig(f"sentiment_analysis_{section_to_analyse}.png")
+    print("Pie chart saved.")
 
 if __name__ == "__main__":
     pass

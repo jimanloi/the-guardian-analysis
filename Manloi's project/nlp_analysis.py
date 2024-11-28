@@ -123,21 +123,21 @@ def analyse_sentiment_by_section(articles, section):
     for article in section_articles:
         sentiment_score = analyse_sentiment_nltk(article.bodyText)
         classify_sentiment = interpret_sentiment(sentiment_score)
-        sentiment_results.append((article.date, article.sectionName, article.webTitle, sentiment_score, classify_sentiment))
+        sentiment_results.append((article.date, article.sectionName, article.webTitle, sentiment_score, classify_sentiment, article.webUrl))
     return sentiment_results
 
 def export_sentiment_to_csv(sentiment_results, output_file):
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow(["Date", "Section" , "Title", "Sentiment Score", "Sentiment Interpretation"])
-        for date, section, title, score, sentiment in sentiment_results:
+        writer.writerow(["Date", "Section" , "Title", "Sentiment Score", "Sentiment Interpretation", "Web url"])
+        for date, section, title, score, sentiment, weburl in sentiment_results:
             formatted_date = datetime.strptime(date, "%Y-%m-%dT%H:%M:%SZ").strftime("%d/%m/%Y")
-            writer.writerow([formatted_date, section, title, score, sentiment])
+            writer.writerow([formatted_date, section, title, score, sentiment, weburl])
     print(f"Sentiment analysis results exported to {output_file}")
 
 def number_of_each_sentiment_label(sentiment_results, sentiment_label):
     counter = 0
-    for date, section, title, score, sentiment in sentiment_results:
+    for date, section, title, score, sentiment, weburl in sentiment_results:
         if sentiment == sentiment_label:
             counter += 1
     print(f"Articles with {sentiment_label} sentiment: {counter}")

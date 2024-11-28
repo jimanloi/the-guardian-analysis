@@ -52,15 +52,15 @@ if __name__ == "__main__":
 """
 
 #To analysis the sentiment of articles in a section
-section_to_analyse = "US news"
+section_to_analyse = "Business"
 output_file = f"sentiment_analysis_{section_to_analyse}.csv"
 sentiment_results = nlp_analysis.analyse_sentiment_by_section(list_of_all_articles, section_to_analyse)
-#    nlp_analysis.export_sentiment_to_csv(sentiment_results, output_file)
+nlp_analysis.export_sentiment_to_csv(sentiment_results, output_file)
 print(f"In the {section_to_analyse} section :")
 nlp_analysis.number_of_each_sentiment_label(sentiment_results,"Positive")
 nlp_analysis.number_of_each_sentiment_label(sentiment_results, "Negative")
 nlp_analysis.number_of_each_sentiment_label(sentiment_results, "Neutral")
-
+visualisation.visualise_sentiment_pie_chart(sentiment_results, section_to_analyse)
 
 """
 
