@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ffe68db-f145-4cd1-9714-e954b8736315" name="Changes" comment="+ sentiment analysis (csv and visualisation)" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="student &lt;student@irisib.be&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4ad8a00296cdab8503b799452aed8ee4105e6e61" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jimanloi"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jimanloi/The_Guardian_analysis_project.git",
+    "accountId": "d122ac51-2259-43c0-8ff0-3bf9b44cdd94"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2oNgNsjjbskYTuMm8lXz2Fi64cX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Bigger_smaller.executor": "Run",
+    "Python.CodeACorriger.executor": "Run",
+    "Python.Exercise day 2.executor": "Run",
+    "Python.ManloiTest.executor": "Run",
+    "Python.Square area.executor": "Run",
+    "Python.The_Guardian_test.executor": "Run",
+    "Python._pydev_execfile.executor": "Run",
+    "Python.account_manager.executor": "Run",
+    "Python.account_manager_v2.executor": "Run",
+    "Python.account_manager_v3.executor": "Run",
+    "Python.account_manager_v3_improved.executor": "Run",
+    "Python.car_variables.executor": "Run",
+    "Python.count_even_numbers.executor": "Run",
+    "Python.count_word_function.executor": "Run",
+    "Python.country.executor": "Run",
+    "Python.currency_converter.executor": "Run",
+    "Python.dictionnary.executor": "Run",
+    "Python.discount_quantity.executor": "Run",
+    "Python.draft.executor": "Debug",
+    "Python.evaluate_entered_grade.executor": "Run",
+    "Python.evaluate_grade.executor": "Run",
+    "Python.ex08.currency_converter.executor": "Run",
+    "Python.ex10.secure_password.executor": "Run",
+    "Python.ex13.countdown.executor": "Run",
+    "Python.ex14.spell_word.executor": "Run",
+    "Python.ex15.vowel_consonant.executor": "Run",
+    "Python.ex16.tasks_list.executor": "Run",
+    "Python.ex17.list_fruits_color.executor": "Run",
+    "Python.ex18.guess_word.executor": "Run",
+    "Python.ex19.additionner.executor": "Run",
+    "Python.ex20.register_users.executor": "Run",
+    "Python.exercise1.executor": "Run",
+    "Python.for.executor": "Run",
+    "Python.for_countwords.executor": "Run",
+    "Python.fstring (concatenation).executor": "Run",
+    "Python.functions.executor": "Run",
+    "Python.furniture.executor": "Run",
+    "Python.get_content.executor": "Debug",
+    "Python.hangman.executor": "Run",
+    "Python.hangmanv1.executor": "Run",
+    "Python.hangmanv2.executor": "Run",
+    "Python.hangmanv3.executor": "Run",
+    "Python.import_content_from_The_Guardian.executor": "Run",
+    "Python.in.executor": "Run",
+    "Python.leap_year.executor": "Run",
+    "Python.list.executor": "Run",
+    "Python.list_table.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.nlp_analysis.executor": "Debug",
+    "Python.remove_incorrect_values.executor": "Run",
+    "Python.round_grades.executor": "Run",
+    "Python.secure_password.executor": "Run",
+    "Python.students_class.executor": "Run",
+    "Python.temperature.executor": "Run",
+    "Python.text.file.executor": "Run",
+    "Python.tk_into.executor": "Run",
+    "Python.visualisation.executor": "Run",
+    "Python.while.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/student/PycharmProjects/Manloi_Python",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": []
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Day 7" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Day 1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="hangmanv2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project_test_1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 4/hangmanv2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="leap_year" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project_test_1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day 2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 2/leap_year.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="temperature" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Project_test_1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day 2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day 2/temperature.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.leap_year" />
+        <item itemvalue="Python.hangmanv2" />
+        <item itemvalue="Python.leap_year" />
+        <item itemvalue="Python.hangmanv2" />
+        <item itemvalue="Python.leap_year" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ffe68db-f145-4cd1-9714-e954b8736315" name="Changes" comment="" />
+      <created>1730715411431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730715411431</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Day 7: initial commit">
+      <option name="closed" value="true" />
+      <created>1731588819987</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731588819987</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Day 7: initial commit">
+      <option name="closed" value="true" />
+      <created>1731589711356</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731589711356</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Revert &quot;Day 7: initial commit&quot;&#10;&#10;This reverts commit 818bd0e0">
+      <option name="closed" value="true" />
+      <created>1731589803104</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731589803104</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Revert &quot;Day 7: commit hello world!">
+      <option name="closed" value="true" />
+      <created>1731589874743</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731589874743</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Day 7: commit hello world!">
+      <option name="closed" value="true" />
+      <created>1731589939473</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731589939473</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Day 7: account manager v3 improved">
+      <option name="closed" value="true" />
+      <created>1731591062307</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731591062307</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Day7: v3">
+      <option name="closed" value="true" />
+      <created>1731591335566</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731591335566</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Day 8 : v1">
+      <option name="closed" value="true" />
+      <created>1731593117235</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731593117235</updated>
+    </task>
+    <task id="LOCAL-00009" summary="day 8: bigger_smaller create .py">
+      <option name="closed" value="true" />
+      <created>1731593979981</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731593979981</updated>
+    </task>
+    <task id="LOCAL-00010" summary="day 8: bigger_smaller v1">
+      <option name="closed" value="true" />
+      <created>1731595145918</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731595145918</updated>
+    </task>
+    <task id="LOCAL-00011" summary="day 8: bigger_smaller v1 completed">
+      <option name="closed" value="true" />
+      <created>1731595218598</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731595218598</updated>
+    </task>
+    <task id="LOCAL-00012" summary="day 8: bigger_smaller with random number">
+      <option name="closed" value="true" />
+      <created>1731597150874</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731597150874</updated>
+    </task>
+    <task id="LOCAL-00013" summary="day 8: bigger_smaller with random number">
+      <option name="closed" value="true" />
+      <created>1731943606136</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731943606136</updated>
+    </task>
+    <task id="LOCAL-00014" summary="day 8: bigger_smaller with random number">
+      <option name="closed" value="true" />
+      <created>1732022341864</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1732022341864</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Class - heritage">
+      <option name="closed" value="true" />
+      <created>1732118638406</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1732118638406</updated>
+    </task>
+    <task id="LOCAL-00016" summary="The Guardian - import content from RSS&#10;to a list">
+      <option name="closed" value="true" />
+      <created>1732266998255</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1732266998255</updated>
+    </task>
+    <task id="LOCAL-00017" summary="only articles from The Guardian&#10;count no. of articles in each section">
+      <option name="closed" value="true" />
+      <created>1732275082563</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1732275082563</updated>
+    </task>
+    <task id="LOCAL-00018" summary="only articles from The Guardian&#10;count no. of articles in each section">
+      <option name="closed" value="true" />
+      <created>1732286823958</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1732286823958</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Top keywords per section">
+      <option name="closed" value="true" />
+      <created>1732547148332</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1732547148332</updated>
+    </task>
+    <task id="LOCAL-00020" summary="top keywords after cleaning and refining">
+      <option name="closed" value="true" />
+      <created>1732618728725</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1732618728725</updated>
+    </task>
+    <task id="LOCAL-00021" summary="+ articles that contain 'belgium'">
+      <option name="closed" value="true" />
+      <created>1732635237329</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1732635237329</updated>
+    </task>
+    <task id="LOCAL-00022" summary="+ sentiment analysis">
+      <option name="closed" value="true" />
+      <created>1732706163205</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1732706163205</updated>
+    </task>
+    <task id="LOCAL-00023" summary="+ sentiment analysis">
+      <option name="closed" value="true" />
+      <created>1732706187697</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1732706187697</updated>
+    </task>
+    <task id="LOCAL-00024" summary="+ sentiment analysis (csv and visualisation)">
+      <option name="closed" value="true" />
+      <created>1732799216541</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1732799216541</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="biggersmaller" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Day 7: initial commit" />
+    <MESSAGE value="Revert &quot;Day 7: initial commit&quot;&#10;&#10;This reverts commit 818bd0e0" />
+    <MESSAGE value="Revert &quot;Day 7: commit hello world!" />
+    <MESSAGE value="Day 7: account manager v3 improved" />
+    <MESSAGE value="Day 8: commit hello world!" />
+    <MESSAGE value="Day 8: commit hello world!" />
+    <MESSAGE value="Day7: v3" />
+    <MESSAGE value="squash! Day 8: commit hello world!" />
+    <MESSAGE value="Day 8 : create bigger smaller game" />
+    <MESSAGE value="Day 8 : v1" />
+    <MESSAGE value="Day 8 : v1 completed" />
+    <MESSAGE value="day 8: bigger_smaller create .py" />
+    <MESSAGE value="day 8: bigger_smaller v1" />
+    <MESSAGE value="day 8: bigger_smaller v1 completed" />
+    <MESSAGE value="Day 10: students_class" />
+    <MESSAGE value="Day 10: students_class" />
+    <MESSAGE value="Class - heritage" />
+    <MESSAGE value="The Guardian - import content from RSS&#10;to a list" />
+    <MESSAGE value="chart to show no. of articles per section per day" />
+    <MESSAGE value="chart to show no. of articles per section per day" />
+    <MESSAGE value="Top keywords per section" />
+    <MESSAGE value="top keywords after cleaning and refining" />
+    <MESSAGE value="+ articles that contain 'belgium'" />
+    <MESSAGE value="+ sentiment analysis" />
+    <MESSAGE value="+ sentiment analysis (csv and visualisation)" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ sentiment analysis (csv and visualisation)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Day 10/students_class.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Day 10/students_class.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Manloi's project/visualisation.py</url>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
