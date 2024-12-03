@@ -5,9 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ffe68db-f145-4cd1-9714-e954b8736315" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Manloi_project/guardian.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Manloi_project/streamlit_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Manloi's project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi's project/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Environment.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Environment.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/.~lock.sentiment_analysis_World news.csv#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/article_with_ gmo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/article_with_belgium.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/article_with_brussels.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/article_with_co2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/article_with_hong kong.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/article_with_python.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/articles_pie_chart.png" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/articles_pie_chart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/draft.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/draft.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/get_content.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/get_content.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/nlp_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/nlp_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/quantitative_analyse.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/quantitative_analyse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Books.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Business.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Business.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Environment.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Film.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_Football.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_US news.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_US news.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_World news.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/sentiment_analysis_World news.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/stackplot5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/stackplot6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/stackplot_articles_per_day_per_section1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-01.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-02.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-03.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-04.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-05.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-06.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-07.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-08.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-09.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-11.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-12.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-13.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-15.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-17.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-19.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-20.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-21.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-27.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-28.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-29.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-30.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/tempdata/articles/2024-10-31.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/visualisation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/visualisation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/wordclouds/Environment_20241126_103759.png" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/wordclouds/Environment_20241126_103759.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/wordclouds/Environment_20241126_103759_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/wordclouds/Environment_20241126_103759_plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/wordclouds/Opinion_20241126_105933.png" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/wordclouds/Opinion_20241126_105933.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/wordclouds/Opinion_20241126_105933_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/wordclouds/Opinion_20241126_105933_plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/wordclouds/R_US_news_20241126_102846.png" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/wordclouds/R_US_news_20241126_102846.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/wordclouds/R_US_news_20241126_102846_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/wordclouds/R_US_news_20241126_102846_plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/wordclouds/R_World_news_20241126_102757.png" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/wordclouds/R_World_news_20241126_102757.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manloi's project/wordclouds/R_World_news_20241126_102757_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/Manloi_project/wordclouds/R_World_news_20241126_102757_plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streamlit_demo/streamlit_app.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +115,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jimanloi"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jimanloi&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jimanloi/The_Guardian_analysis_project.git",
-    "accountId": "d122ac51-2259-43c0-8ff0-3bf9b44cdd94"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jimanloi/The_Guardian_analysis_project.git&quot;,
+    &quot;accountId&quot;: &quot;d122ac51-2259-43c0-8ff0-3bf9b44cdd94&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -72,88 +139,90 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Bigger_smaller.executor": "Run",
-    "Python.CodeACorriger.executor": "Run",
-    "Python.Exercise day 2.executor": "Run",
-    "Python.ManloiTest.executor": "Run",
-    "Python.Square area.executor": "Run",
-    "Python.The_Guardian_test.executor": "Run",
-    "Python._pydev_execfile.executor": "Run",
-    "Python.account_manager.executor": "Run",
-    "Python.account_manager_v2.executor": "Run",
-    "Python.account_manager_v3.executor": "Run",
-    "Python.account_manager_v3_improved.executor": "Run",
-    "Python.car_variables.executor": "Run",
-    "Python.count_even_numbers.executor": "Run",
-    "Python.count_word_function.executor": "Run",
-    "Python.country.executor": "Run",
-    "Python.currency_converter.executor": "Run",
-    "Python.dictionnary.executor": "Run",
-    "Python.discount_quantity.executor": "Run",
-    "Python.draft.executor": "Debug",
-    "Python.evaluate_entered_grade.executor": "Run",
-    "Python.evaluate_grade.executor": "Run",
-    "Python.ex08.currency_converter.executor": "Run",
-    "Python.ex10.secure_password.executor": "Run",
-    "Python.ex13.countdown.executor": "Run",
-    "Python.ex14.spell_word.executor": "Run",
-    "Python.ex15.vowel_consonant.executor": "Run",
-    "Python.ex16.tasks_list.executor": "Run",
-    "Python.ex17.list_fruits_color.executor": "Run",
-    "Python.ex18.guess_word.executor": "Run",
-    "Python.ex19.additionner.executor": "Run",
-    "Python.ex20.register_users.executor": "Run",
-    "Python.exercise1.executor": "Run",
-    "Python.for.executor": "Run",
-    "Python.for_countwords.executor": "Run",
-    "Python.fstring (concatenation).executor": "Run",
-    "Python.functions.executor": "Run",
-    "Python.furniture.executor": "Run",
-    "Python.get_content.executor": "Debug",
-    "Python.hangman.executor": "Run",
-    "Python.hangmanv1.executor": "Run",
-    "Python.hangmanv2.executor": "Run",
-    "Python.hangmanv3.executor": "Run",
-    "Python.import_content_from_The_Guardian.executor": "Run",
-    "Python.in.executor": "Run",
-    "Python.leap_year.executor": "Run",
-    "Python.list.executor": "Run",
-    "Python.list_table.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.nlp_analysis.executor": "Debug",
-    "Python.remove_incorrect_values.executor": "Run",
-    "Python.round_grades.executor": "Run",
-    "Python.secure_password.executor": "Run",
-    "Python.students_class.executor": "Run",
-    "Python.temperature.executor": "Run",
-    "Python.text.file.executor": "Run",
-    "Python.tk_into.executor": "Run",
-    "Python.visualisation.executor": "Run",
-    "Python.while.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/student/PycharmProjects/Manloi_Python",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Bigger_smaller.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CodeACorriger.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Exercise day 2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ManloiTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Square area.executor&quot;: &quot;Run&quot;,
+    &quot;Python.The_Guardian_test.executor&quot;: &quot;Run&quot;,
+    &quot;Python._pydev_execfile.executor&quot;: &quot;Run&quot;,
+    &quot;Python.account_manager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.account_manager_v2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.account_manager_v3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.account_manager_v3_improved.executor&quot;: &quot;Run&quot;,
+    &quot;Python.car_variables.executor&quot;: &quot;Run&quot;,
+    &quot;Python.count_even_numbers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.count_word_function.executor&quot;: &quot;Run&quot;,
+    &quot;Python.country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.currency_converter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dictionnary.executor&quot;: &quot;Run&quot;,
+    &quot;Python.discount_quantity.executor&quot;: &quot;Run&quot;,
+    &quot;Python.draft.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.evaluate_entered_grade.executor&quot;: &quot;Run&quot;,
+    &quot;Python.evaluate_grade.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex08.currency_converter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex10.secure_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex13.countdown.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex14.spell_word.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex15.vowel_consonant.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex16.tasks_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex17.list_fruits_color.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex18.guess_word.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex19.additionner.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ex20.register_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python.exercise1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.for.executor&quot;: &quot;Run&quot;,
+    &quot;Python.for_countwords.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fstring (concatenation).executor&quot;: &quot;Run&quot;,
+    &quot;Python.functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.furniture.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_content.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.hangman.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hangmanv1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hangmanv2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hangmanv3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.import_content_from_The_Guardian.executor&quot;: &quot;Run&quot;,
+    &quot;Python.in.executor&quot;: &quot;Run&quot;,
+    &quot;Python.leap_year.executor&quot;: &quot;Run&quot;,
+    &quot;Python.list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.list_table.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.nlp_analysis.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.remove_incorrect_values.executor&quot;: &quot;Run&quot;,
+    &quot;Python.round_grades.executor&quot;: &quot;Run&quot;,
+    &quot;Python.secure_password.executor&quot;: &quot;Run&quot;,
+    &quot;Python.streamlit_app.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.students_class.executor&quot;: &quot;Run&quot;,
+    &quot;Python.temperature.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text.file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tk_into.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualisation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.while.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/student/PycharmProjects/Manloi_Python/Manloi's project&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": []
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Day 7" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Manloi's project" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Day 1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="hangmanv2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Project_test_1" />
+      <module name="Manloi_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -175,7 +244,7 @@
       <method v="2" />
     </configuration>
     <configuration name="leap_year" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Project_test_1" />
+      <module name="Manloi_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -196,8 +265,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Manloi_Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Manloi_project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Manloi_project/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="temperature" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Project_test_1" />
+      <module name="Manloi_Python" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,18 +311,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.leap_year" />
         <item itemvalue="Python.hangmanv2" />
         <item itemvalue="Python.leap_year" />
         <item itemvalue="Python.hangmanv2" />
-        <item itemvalue="Python.leap_year" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+        <option value="bundled-python-sdk-6a3326d57233-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.24807.21" />
       </set>
     </attachedChunks>
   </component>
@@ -444,7 +535,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732799676219</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="adding Environment section sentiment analysis">
+      <option name="closed" value="true" />
+      <created>1732800801192</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1732800801192</updated>
+    </task>
+    <task id="LOCAL-00027" summary="streamlit_demo">
+      <option name="closed" value="true" />
+      <created>1732894638561</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1732894638561</updated>
+    </task>
+    <task id="LOCAL-00028" summary="new stackplot with more sections">
+      <option name="closed" value="true" />
+      <created>1732895105329</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1732895105329</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -489,9 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Revert &quot;Day 7: initial commit&quot;&#10;&#10;This reverts commit 818bd0e0" />
-    <MESSAGE value="Revert &quot;Day 7: commit hello world!" />
-    <MESSAGE value="Day 7: account manager v3 improved" />
     <MESSAGE value="Day 8: commit hello world!" />
     <MESSAGE value="Day 8: commit hello world!" />
     <MESSAGE value="Day7: v3" />
@@ -514,7 +626,10 @@
     <MESSAGE value="+ sentiment analysis" />
     <MESSAGE value="+ sentiment analysis (csv and visualisation)" />
     <MESSAGE value="adding all files" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding all files" />
+    <MESSAGE value="adding Environment section sentiment analysis" />
+    <MESSAGE value="streamlit_demo" />
+    <MESSAGE value="new stackplot with more sections" />
+    <option name="LAST_COMMIT_MESSAGE" value="new stackplot with more sections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -530,8 +645,9 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Manloi's project/visualisation.py</url>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/Manloi_project/main.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
