@@ -12,6 +12,8 @@ from guardian import GuardianArticle
 def main():
     if 'list_of_all_articles' not in st.session_state:
         st.session_state.list_of_all_articles = []
+    if 'fetch_articles_clicked' not in st.session_state:
+        st.session_state.fetch_articles_clicked = False
     list_of_all_articles = st.session_state.list_of_all_articles
     print(list_of_all_articles)
     st.title("Manloi's Project :sunflower:")
@@ -26,11 +28,14 @@ def main():
     start_date = st.sidebar.date_input("Start Date", date(2024,10,1))
     end_date = st.sidebar.date_input("End Date", date(2024,10,31))
     st.write("Start the program by choosing a time period.")
+
     if start_date > end_date:
         st.sidebar.error("Start Date must be before End Date.")
+
     else:
-        if st.sidebar.button("Fetch Articles"):
+        if st.sidebar.button("Fetch Articles", key="fetch_articles_button", disabled=st.session_state.fetch_articles_clicked):
             print("button pressed")
+            st.session_state.fetch_articles_clicked = True
             with st.spinner('Downloading the articles...'):
                 st.session_state.list_of_all_articles = []
                 get_content.import_data_from_TheGuardian(api_key, api_endpoint, start_date, end_date, folder_path)
@@ -40,6 +45,7 @@ def main():
         if not list_of_all_articles:
             st.error("No articles fetched. Please fetch articles before proceeding.")
             return
+
     if list_of_all_articles:
         list_section_count = []
         quantitative_analyse.count_articles_per_section_per_day(list_of_all_articles, list_section_count)
@@ -49,34 +55,36 @@ def main():
         st.subheader("Quantitative Analysis")
         st.pyplot(fig)
 
-        if list_of_all_articles != []:
-            tab1, tab2 = st.tabs(["Keyword Analysis","Sentiment Analysis"])
-            with tab1:
-                st.subheader("Keyword Analysis")
-                sections_to_include = ["World news","US news","Football","Opinion","Australia news","Sport","UK news","Business","Music","Environment","Film","Society","Politics","Life and style","Books","Television & radio","Stage","Art and design","Food","Culture","Technology","Media","Science","Global development"]
-                selected_section = st.selectbox("Select a section for Keyword Analysis:", options=sections_to_include)
-                if st.button("Submit", key="keyword_analysis_button"):
-                    with st.spinner(f"Performing keyword analysis on the following section: **{selected_section}**"):
-                        keywords = nlp_analysis.extract_keywords_from_section(list_of_all_articles, selected_section, 10)
-                    fig = visualisation.wordcloud_poo(keywords)
-                    st.pyplot(fig)
-                    fig = visualisation.plot_keywords_poo(keywords,selected_section,start_date, end_date,10)
-                    st.pyplot(fig)
-                else:
-                    st.warning("Please select a section to start the analysis.")
+        tab1, tab2 = st.tabs(["Keyword Analysis","Sentiment Analysis"])
+        with tab1:
+            st.subheader("Keyword Analysis")
+            sections_to_include = ["World news","US news","Football","Opinion","Australia news","Sport","UK news","Business","Music","Environment","Film","Society","Politics","Life and style","Books","Television & radio","Stage","Art and design","Food","Culture","Technology","Media","Science","Global development"]
+            selected_section = st.selectbox("Select a section for Keyword Analysis:", options=sections_to_include)
+            if st.button("Submit", key="keyword_analysis_button"):
+                with st.spinner(f"Performing keyword analysis on the following section: **{selected_section}**"):
+                    keywords = nlp_analysis.extract_keywords_from_section(list_of_all_articles, selected_section, 10)
+                fig = visualisation.wordcloud_poo(keywords)
+                st.pyplot(fig)
+                fig = visualisation.plot_keywords_poo(keywords,selected_section,start_date, end_date,10)
+                st.pyplot(fig)
+            else:
+                st.warning("Please select a section to start the analysis.")
+        with tab2:
+            st.subheader("Sentiment Analysis :smiley::neutral_face::anguished:")
+            sections_to_include = ["World news", "US news", "Football", "Opinion", "Australia news", "Sport", "UK news",
+                                   "Business", "Music", "Environment", "Film", "Society", "Politics", "Life and style",
+                                   "Books", "Television & radio", "Stage", "Art and design", "Food", "Culture",
+                                   "Technology", "Media", "Science", "Global development"]
+            selected_section = st.selectbox("Select a section for Sentiment Analysis:", options=sections_to_include)
+            if st.button("Submit", key="sentiment_analysis_button"):
+                with st.spinner(f"Performing sentiment analysis on the following section: **{selected_section}**"):
+                    sentiment_result = nlp_analysis.analyse_sentiment_by_section(list_of_all_articles,selected_section)
+                    fig = visualisation.visualise_sentiment_pie_chart_poo(sentiment_result,selected_section)
+                st.pyplot(fig)
 
-            with tab2:
-                st.subheader("Sentiment Analysis :smiley::neutral_face::anguished:")
-                sections_to_include = ["World news", "US news", "Football", "Opinion", "Australia news", "Sport", "UK news",
-                                       "Business", "Music", "Environment", "Film", "Society", "Politics", "Life and style",
-                                       "Books", "Television & radio", "Stage", "Art and design", "Food", "Culture",
-                                       "Technology", "Media", "Science", "Global development"]
-                selected_section = st.selectbox("Select a section for Sentiment Analysis:", options=sections_to_include)
-                if st.button("Submit", key="sentiment_analysis_button"):
-                    with st.spinner(f"Performing sentiment analysis on the following section: **{selected_section}**"):
-                        sentiment_result = nlp_analysis.analyse_sentiment_by_section(list_of_all_articles,selected_section)
-                        fig = visualisation.visualise_sentiment_pie_chart_poo(sentiment_result,selected_section)
-                    st.pyplot(fig)
+    if st.sidebar.button("Restart Program"):
+        st.session_state.clear()
+        st.rerun()
 
 
 if __name__ == '__main__':
