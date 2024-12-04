@@ -1,3 +1,5 @@
+import os
+from sys import excepthook
 
 import spacy
 import nltk
@@ -45,16 +47,47 @@ def format_date(article):
 
 #To see how many articles mention the word and save it to a csv
 def find_articles_containing_a_word_to_csv(articles, word_to_find, output_file):
-    with open(output_file, mode="w", newline="")as file:
+    folder_path = "articles_with_the_word"
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+    full_file_path = os.path.join(folder_path, output_file)
+    with open(full_file_path, mode="w", newline="")as file:
         writer = csv.writer(file)
         writer.writerow(["Section Name", "Date", "Web Title", "Web URL"])
         counter = 0
         for article in articles:
             if word_to_find in article.bodyText.lower():
                 counter += 1
-                format_date(article.date)
-                writer.writerow([article.sectionName, article.date, article.webTitle, article.webUrl])
-    print(f"Exported {counter} articles containing '{word_to_find}' to {output_file}.")
+                try:
+                    formatted_date = datetime.strptime(article.date, "%Y-%m-%dT%H:%M:%SZ").strftime("%d/%m/%Y")
+                except ValueError:
+                    # In case the date format is different or invalid
+                    formatted_date = article.date  # Keep original date if parsing fails
+                writer.writerow([article.sectionName, formatted_date, article.webTitle, article.webUrl])
+                print(f"Exported {counter} articles containing '{word_to_find}' to {output_file}.")
+
+
+def find_articles_containing_a_word(articles, word_to_find):
+    # Prepare a list to hold filtered article data
+    filtered_articles = []
+
+    # Filter articles containing the keyword
+    for article in articles:
+        if word_to_find.lower() in article.bodyText.lower():
+            try:
+                # Format the date if necessary
+                formatted_date = datetime.strptime(article.date, "%Y-%m-%dT%H:%M:%SZ").strftime("%d/%m/%Y")
+            except ValueError:
+                formatted_date = article.date  # Use the original date if parsing fails
+
+            # Append relevant article details to the filtered list
+            filtered_articles.append({
+                "Section Name": article.sectionName,
+                "Date": formatted_date,
+                "Web Title": article.webTitle,
+                "Web URL": article.webUrl
+            })
+    return filtered_articles
 
 
 def get_bodytexts_in_section(articles, section):

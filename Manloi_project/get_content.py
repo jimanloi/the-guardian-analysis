@@ -69,6 +69,7 @@ def import_data_from_TheGuardian(api_key, api_endpoint, start_date, end_date, fo
 
 
 def get_readable_articles(list_to_work_on: list, folder_path, class_of_media, start_date, end_date):
+    unique_identifiers = set(article.webUrl for article in list_to_work_on)
     start_date = start_date
     end_date = end_date
     for file_name in os.listdir(folder_path):
@@ -94,7 +95,9 @@ def get_readable_articles(list_to_work_on: list, folder_path, class_of_media, st
                     # Include articles within the specified date range
                         if start_date <= pub_date <= end_date:
                             article = class_of_media(data_of_the_day)
-                            list_to_work_on.append(article)
+                            if article.webUrl not in unique_identifiers:  # Avoid duplicates
+                                list_to_work_on.append(article)
+                                unique_identifiers.add(article.webUrl)
                 else:
                     print(f"Invalid data format in file: {file_name}")
     return list_to_work_on

@@ -18,11 +18,19 @@ def main():
     end_date = date(2024, 10, 31)
 
     get_content.import_data_from_TheGuardian(api_key, api_endpoint, start_date, end_date, folder_path)
-    get_content.get_readable_articles(list_of_all_articles, folder_path, GuardianArticle)
+    get_content.get_readable_articles(list_of_all_articles, folder_path, GuardianArticle, start_date, end_date)
 
-    #   for article in list_of_all_articles:
-    #       print(article)
+    # To see how many articles mention the word and save it to a csv
+    word_to_find = "microsoft"
+    output_file = f"articles_with_{word_to_find}.csv"
+    nlp_analysis.find_articles_containing_a_word_to_csv(list_of_all_articles, word_to_find, output_file)
 
+    # Frequency of a word in all articles
+    section = "World news"
+    number_of_mention = nlp_analysis.word_frequency_in_section(list_of_all_articles, section , word_to_find)
+    print(f"Frequency of the word {word_to_find} in {section}: {number_of_mention}")
+
+    """
     # To show no. of articles per section
     list_section_count = []
     quantitative_analyse.count_articles_per_section_per_day(list_of_all_articles, list_section_count)
@@ -36,7 +44,6 @@ def main():
     #visualisation.save_wordcloud(top_keywords_opinion, "Opinion")
     visualisation.plot_keywords(top_keywords_opinion, "Opinion")
 
-    """
     # To analysis the sentiment of articles in a section
     section_to_analyse = "Environment"
     output_file = f"sentiment_analysis_{section_to_analyse}.csv"
@@ -47,17 +54,6 @@ def main():
     nlp_analysis.number_of_each_sentiment_label(sentiment_results, "Negative")
     nlp_analysis.number_of_each_sentiment_label(sentiment_results, "Neutral")
     visualisation.visualise_sentiment_pie_chart(sentiment_results, section_to_analyse)
-
-    
-    #To see how many articles mention the word and save it to a csv
-    word_to_find = "python"
-    
-    output_file = f"articles_with_{word_to_find}.csv"
-    nlp_analysis.find_articles_containing_a_word_to_csv(list_of_all_articles, word_to_find, output_file)
-    
-    #Frequency of a word in all articles
-    number_of_mention = nlp_analysis.word_frequency_in_section(list_of_all_articles,"World news",word_to_find)
-    print(f"Frequency of the word {word_to_find}: {number_of_mention}")
     
     number_of_mention = nlp_analysis.word_frequency_in_section(list_of_all_articles,"",word_to_find)
     print(f"Frequency of the word {word_to_find}: {number_of_mention}")
