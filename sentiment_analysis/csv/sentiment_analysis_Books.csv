@@ -1,0 +1,203 @@
+Date,Section,Title,Sentiment Score,Sentiment Interpretation
+31/10/2024,Books,What we’re reading: writers and readers on the books they enjoyed in October,0.9881,Positive
+31/10/2024,Books,"Australian Gospel: A Family Saga by Lech Blaine review – a sensational tale, skilfully told",0.996,Positive
+31/10/2024,Books,The Unfinished Harauld Hughes by Richard Ayoade review – comic novel or conceptual art project?,0.9876,Positive
+31/10/2024,Books,Lower Than the Angels by Diarmaid MacCulloch review – sex and the church,0.8227,Positive
+31/10/2024,Books,The Hotel by Daisy Johnson review – chilling tales for Halloween,-0.9951,Negative
+13/10/2024,Books,From Here to the Great Unknown by Lisa Marie Presley and Riley Keough review – a book built on grief,-0.9906,Negative
+13/10/2024,Books,The Drowned by John Banville review – death and drizzle in 50s Ireland,-0.9905,Negative
+13/10/2024,Books,‘Immensely private’: inside great sketchbooks from history,0.9977,Positive
+13/10/2024,Books,The Place of Tides by James Rebanks review – a warming tale of gathering eiderdown in Norway,-0.1677,Negative
+13/10/2024,Books,‘He knew this was going to be the last story he wrote’: the epic legacy of literary maverick Biyi Bándélé,0.9975,Positive
+13/10/2024,Books,Fire Exit by Morgan Talty review – beautifully crafted debut set in a Native community in the US,0.9639,Positive
+13/10/2024,Books,‘A street-boy throwing stones at pompous windows’: Claud Cockburn and the birth of guerrilla journalism,-0.9449,Negative
+13/10/2024,Books,"In brief: The Catchers; Poet, Mystic, Widow, Wife; Every Man for Himself and God Against All – review",0.9374,Positive
+13/10/2024,Books,The Care Dilemma by David Goodhart review – a flawed study of family life,0.9966,Positive
+05/10/2024,Books,Zoë Foster Blake: ‘I’d fight Moo Deng. She would win’,0.9993,Positive
+05/10/2024,Books,Boy whose Mousetrap show at school led to legal threat joins West End cast,0.991,Positive
+05/10/2024,Books,Nobel prize winner Olga Tokarczuk: ‘We live with violence and misogyny like some sort of constant illness’,0.9913,Positive
+05/10/2024,Books,‘This guy was shady’: Zeppo Marx’s underworld links revealed in new book,0.9967,Positive
+05/10/2024,Books,Discovered: a lost possible inspiration for Virginia Woolf’s Mrs Dalloway,0.9986,Positive
+05/10/2024,Books,Attica Locke on the US election: ‘It’s white Americans that have to fix this’,0.988,Positive
+05/10/2024,Books,Why Fish Don’t Exist by Lulu Miller review – a marvel of narrative non fiction,-0.991,Negative
+17/10/2024,Books,Siri Hustvedt to write a book about her late husband Paul Auster,-0.9392,Negative
+17/10/2024,Books,"The Burrow by Melanie Cheng review – a tender, compelling story of family and grief",-0.9955,Negative
+17/10/2024,Books,Where to start with: Alan Garner,0.9995,Positive
+17/10/2024,Books,Colored Television by Danzy Senna review – race as performance,0.9966,Positive
+17/10/2024,Books,The Elements of Marie Curie by Dava Sobel review – lessons in chemistry,0.997,Positive
+17/10/2024,Books,Juice by Tim Winton review – life after the apocalypse,-0.2455,Negative
+26/10/2024,Books,‘I lived in absolute fear of him’: Lech Blaine on finding humanity in the born-again prophets who terrorised his family,-0.9928,Negative
+26/10/2024,Books,Eliza Clark: ‘I don’t think we respect female writers’,0.9979,Positive
+26/10/2024,Books,Novelist Jonathan Coe: ‘Liz Truss was very unimpressed to meet me’,0.9998,Positive
+26/10/2024,Books,The Empusium by Olga Tokarczuk review – hallucinogenic horrors ,0.9581,Positive
+03/10/2024,Books,Unleashed by Boris Johnson review – memoirs of a clown,0.9865,Positive
+03/10/2024,Books,"Majority of UK children’s books with Black main characters written by white authors, study finds",0.8684,Positive
+03/10/2024,Books,The Deal by Alex Miller review – the failure and the fire of an artist’s life,0.9901,Positive
+03/10/2024,Books,Kingmaker by Sonia Purnell review – a woman of influence,0.9973,Positive
+03/10/2024,Books,The Mighty Red by Louise Erdrich review – a multifaceted rural tale,0.9927,Positive
+03/10/2024,Books,Muslims Don’t Matter by Sayeeda Warsi review – a stinging rebuke to former colleagues,-0.9965,Negative
+04/10/2024,Books,Hamish MacGibbon obituary,0.9959,Positive
+04/10/2024,Books,"‘Urgent’, ‘stunningly written’, ‘a feat of imagination’: the best Australian books out in October",0.998,Positive
+04/10/2024,Books,"Boris Johnson’s memoir, Unleashed, tops Amazon UK sales list ahead of publication",0.9929,Positive
+04/10/2024,Books,The best recent poetry – review roundup,-0.5317,Negative
+04/10/2024,Books,The Outrun by Amy Liptrot review – brutal yet poignant account of life on the edge,0.2558,Positive
+04/10/2024,Books,Alan Hollinghurst: ‘I wrote letters to my schoolfriends in dwarfish runes’,0.9982,Positive
+04/10/2024,Books,Odyssey by Stephen Fry review – a jaunty version of Homer,0.9936,Positive
+20/10/2024,Books,Sonny Boy: A Memoir by Al Pacino review – a South Bronx miracle,-0.9482,Negative
+20/10/2024,Books,Fleur Adcock obituary,0.9979,Positive
+20/10/2024,Books,Tell Me Everything by Elizabeth Strout review – characters that never grow old,-0.9668,Negative
+20/10/2024,Books,‘It’s quite galling’: children’s authors frustrated by rise in celebrity-penned titles,0.9982,Positive
+20/10/2024,Books,Goethe: His Faustian Life by AN Wilson review – a messy hymn to a very modern man,0.841,Positive
+20/10/2024,Books,‘Could do better’ – Worst Witch author’s school reports just like Mildred’s,0.7801,Positive
+20/10/2024,Books,Time of the Child by Niall Williams review – sublime tale of small-town Irish life,0.9885,Positive
+20/10/2024,Books,"K-pop, K-movies, a Nobel prize … and now K-poetry: book of wise words adds to Korea’s cultural glory",0.9991,Positive
+20/10/2024,Books,In brief: Powsels and Thrums; By Any Other Name; The Politics of Time – review,0.6662,Positive
+20/10/2024,Books,Karla’s Choice: A John le Carré Novel by Nick Harkaway review – the Circus is back in town,0.9946,Positive
+10/10/2024,Books,Forward poetry prize goes to Victoria Chang for collection inspired by painter Agnes Martin,0.9987,Positive
+10/10/2024,Books,Imprisoned British-Egyptian activist named PEN writer of courage 2024,0.9952,Positive
+10/10/2024,Books,Nuclear war rehearsal and Gauguin biography make shortlist for Baillie Gifford prize,0.9978,Positive
+10/10/2024,Books,Han Kang’s Nobel win is testament to importance of small press publishing,0.9768,Positive
+10/10/2024,Books,Juice by Tim Winton review – a beautiful story of a horrifying future,0.1303,Positive
+10/10/2024,Books,South Korean author Han Kang wins the 2024 Nobel prize in literature,0.9994,Positive
+10/10/2024,Books,The Catchers by Xan Brooks review – this dark picaresque is a delight,0.9304,Positive
+10/10/2024,Books,What I Ate in One Year (and Related Thoughts) by Stanley Tucci review – starry friends and tasty morsels,0.9986,Positive
+10/10/2024,Books,"Publishing’s ‘Super Thursday’ includes books by Boris Johnson, Stanley Tucci and Kate Mosse",0.4927,Positive
+10/10/2024,Books,I Haven’t Been Entirely Honest With You by Miranda Hart review – chronic illness and love at last,0.976,Positive
+22/10/2024,Books,The Colour of Extinction by SC Flynn review – into the darkness… or the light?,-0.958,Negative
+22/10/2024,Books,Patriot by Alexei Navalny review – last testament,-0.9943,Negative
+22/10/2024,Books,British Academy to pay tribute to Benjamin Zephaniah at live event,0.9623,Positive
+18/10/2024,Books,Reader stumbles on Dracula’s ancestors in a Dublin library,0.7869,Positive
+18/10/2024,Books,Even bestselling authors are under threat from dwindling incomes | Letter,0.983,Positive
+18/10/2024,Books,Freud is coming back into fashion | Letters,0.9133,Positive
+18/10/2024,Books,Odyssey by Stephen Fry audiobook review – one hell of a trip,-0.5499,Negative
+18/10/2024,Books,The best recent crime and thrillers – review roundup,-0.9931,Negative
+18/10/2024,Books,Karl Ove Knausgård: ‘The book that changed me as a teenager? The History of Bestiality’,0.993,Positive
+18/10/2024,Books,World Without End review by Jean-Marc Jancovici and Christophe Blain – a graphic view of the climate crisis,0.9585,Positive
+29/10/2024,Books,"Small, local book festivals are still thriving | Letters",0.9992,Positive
+29/10/2024,Books,Crime and thrillers of the month – review,-0.9926,Negative
+29/10/2024,Books,Sylvia Plath’s Tomato Soup Cake review – a writer’s place is not in the kitchen,-0.3144,Negative
+08/10/2024,Books,"Lore Segal, Austrian-American author, dies aged 96",0.5837,Positive
+08/10/2024,Books,Chinese author Can Xue is favourite to win 2024 Nobel prize in literature,0.9972,Positive
+08/10/2024,Books,Entitlement by Rumaan Alam review – meandering study of money’s corrupting influence,0.3472,Positive
+08/10/2024,Books,Reagan: His Life and Legend by Max Boot review – a head of state lost without a script,-0.9358,Negative
+27/10/2024,Books,Letters by Oliver Sacks review – valuable insight into a curious mind,0.9935,Positive
+27/10/2024,Books,"We All Shine On: John, Yoko & Me by Elliot Mintz review – life as a confidant, fixer… and flunky",0.9958,Positive
+27/10/2024,Books,Humanist chaplain Greg Epstein: ‘Our bowed interactions with our phones look like worship’,0.999,Positive
+27/10/2024,Books,"The Sequel by Jean Hanff Korelitz review – witty, tightly plotted follow-up",0.571,Positive
+27/10/2024,Books,In brief: Jeremy Catto; Haunted Tales; A Ballet of Lepers – review ,0.7469,Positive
+27/10/2024,Books,Patriot by Alexei Navalny review – the man who dared to defy Putin,-0.9929,Negative
+24/10/2024,Books,Winner of Royal Society Trivedi science book prize assesses whether humans really could colonise Mars,0.9952,Positive
+24/10/2024,Books,UK exhibition shows 15th-century women led armies and performed surgery,0.9883,Positive
+24/10/2024,Books,"Yulia Navalnaya, widow of opposition leader Alexei Navalny, says she can ‘imagine Russia without Putin’",-0.3049,Negative
+24/10/2024,Books,David Nicholls heads shortlist for Wodehouse comic fiction prize,0.9978,Positive
+24/10/2024,Books,Rapture by Emily Maguire review – tale of medieval female pope feels fresh and intimate,0.999,Positive
+24/10/2024,Books,Richard Woodman obituary,0.983,Positive
+24/10/2024,Books,My Hummingbird Father by Pascale Petit review – a tale of childhood trauma takes flight ,0.9633,Positive
+24/10/2024,Books,My Beloved Monster by Caleb Carr review – when a cat saves your life,0.9709,Positive
+24/10/2024,Books,Karla’s Choice by Nick Harkaway review – this continuation of le Carré is a treat,0.9816,Positive
+24/10/2024,Books,Rare typescript of The Little Prince to go up for sale,0.872,Positive
+15/10/2024,Books,Robert Coover obituary,0.9956,Positive
+15/10/2024,Books,Roberto Saviano to appear at Frankfurt book fair despite Italy delegation’s snub,0.9812,Positive
+15/10/2024,Books,"Boris Johnson’s memoir sells more than 40,000 copies in first week on sale",-0.0191,Neutral
+15/10/2024,Books,‘I emerged painfully transformed from her books’: Han Kang readers on her Nobel literature prize,-0.9802,Negative
+15/10/2024,Books,Children’s and teens roundup – the best new chapter books,0.9966,Positive
+15/10/2024,Books,What I Ate in One Year by Stanley Tucci review – one bite too many?,0.9907,Positive
+25/10/2024,Books,John Keats statue to be unveiled near his birthplace in London’s Moorgate,0.988,Positive
+25/10/2024,Books,Lore Segal obituary,0.9585,Positive
+25/10/2024,Books,Children’s and teens roundup – the best new picture books and novels,0.9965,Positive
+25/10/2024,Books,Hip-hop Is History by Questlove review – the story of rap,0.9633,Positive
+25/10/2024,Books,Lissa Evans: ‘Charlotte’s Web had me beside myself with rage and disbelief’,0.9944,Positive
+25/10/2024,Books,Bernardine Evaristo offers her Kent cottage to writers for free retreats,0.9916,Positive
+25/10/2024,Books,"Letters by Oliver Sacks review – science, sex and motorcycles",0.9979,Positive
+19/10/2024,Books,American author Joy Williams: ‘The comfy story has got to change’,0.9912,Positive
+19/10/2024,Books,‘There was eye-watering fear’: John le Carré’s son on writing a new George Smiley novel,0.9995,Positive
+19/10/2024,Books,Nobody’s Empire by Stuart Murdoch review – Belle and Sebastian and me,0.9989,Positive
+07/10/2024,Books,"‘If I have a fault, it’s that I’m too honest’ – Boris Johnson’s Unleashed, digested by John Crace",-0.8955,Negative
+07/10/2024,Books,"Foul play at the fish farm: ‘Nordic blue’, the hit new genre mixing noir and knitting",-0.8286,Negative
+07/10/2024,Books,The big idea: should we be thinking about luck differently?,0.9976,Positive
+07/10/2024,Books,Poem of the week: from The War Prayer by Mark Twain ,-0.9755,Negative
+07/10/2024,Books,World Without End by Jean-Marc Jancovici and Christophe Blain review – Doomsday in minute detail,0.9892,Positive
+07/10/2024,Books,"The American No by Rupert Everett review – truthful, witty, wise and stoical",0.9779,Positive
+06/10/2024,Books,Salman Rushdie to publish first work of fiction since 2022 stabbing,-0.9937,Negative
+06/10/2024,Books,"Revenge of the Tipping Point by Malcolm Gladwell review – same theory, but a bit dreary",0.7032,Positive
+06/10/2024,Books,Small Rain by Garth Greenwell review – staring death in the face,-0.9724,Negative
+06/10/2024,Books,The road to a slave-free Georgia: the little-known history of state founder James Oglethorpe,-0.9983,Negative
+06/10/2024,Books,"Your Journey, Your Way by Horatio Clare review – the Martin Lewis of mental health",0.9673,Positive
+06/10/2024,Books,The Map of Bones by Kate Mosse review –  satisfying family saga finale ,0.9983,Positive
+06/10/2024,Books,"‘Coal jobs were out, opiates were in’: how shame and pride explain Trump’s rural popularity",-0.9965,Negative
+06/10/2024,Books,A Man With No Title by Xavier Le Clerc review – a poignant hymn to an Algerian father ,-0.9783,Negative
+06/10/2024,Books,"Den of Spies: Craig Unger on Reagan, treason and the first October surprise",-0.9975,Negative
+06/10/2024,Books,In brief: The Blue Hour; England: A Natural History; A Book of Noises – review,0.9922,Positive
+06/10/2024,Books,The queen of suspense: how Ann Radcliffe inspired Dickens and Austen – then got written out of the canon,0.9644,Positive
+06/10/2024,Books,"‘I’ve dealt with anti-hillbilly bigotry all my life’: Barbara Kingsolver on JD Vance, the real Appalachia and why Demon Copperhead was such a hit",0.9992,Positive
+06/10/2024,Books,Unleashed by Boris Johnson review – regrets? Not even a few,0.9917,Positive
+23/10/2024,Books,‘For too long literature has been defined by one set of people’: writing back to the empire and beyond ,0.8533,Positive
+23/10/2024,Books,"Unfortunately, She Was a Nymphomaniac by Joan Smith review – debunking misogynist myths of ancient Rome",-0.9986,Negative
+23/10/2024,Books,After Baillie Gifford: are literary festivals on their last legs?,0.9999,Positive
+23/10/2024,Books,"Melissa Lucashenko’s novel Edenglassie wins $150,000 in book prizes in just 24 hours",0.9964,Positive
+23/10/2024,Books,She Speaks! by Harriet Walter review – new words for Shakespeare’s women,0.995,Positive
+23/10/2024,Books,Psychedelic Outlaws by Joanna Kempner review – a compelling case for the use of magic mushrooms in pain relief,-0.9948,Negative
+02/10/2024,Books,2024 Goldsmiths prize shortlist spotlights ‘the novel at its most novel’ ,0.9934,Positive
+02/10/2024,Books,Reese Witherspoon announces first novel co-written with Harlan Coben,0.9527,Positive
+02/10/2024,Books,Black British Book festival founder criticises lack of diversity in publishing,0.9904,Positive
+02/10/2024,Books,"Tim Winton: ‘I lived in the worst possible space for seven years. It knocks some paint off you, I can tell you’",0.526,Positive
+02/10/2024,Books,"My Animals, and Other Animals by Bill Bailey review – dogs and monsters",0.9931,Positive
+02/10/2024,Books,All My Precious Madness by Mark Bowles review – biting humour,0.9353,Positive
+02/10/2024,Books,Revenge of the Tipping Point by Malcolm Gladwell review – the superspreader returns,0.9258,Positive
+02/10/2024,Books,The Third Realm by Karl Ove Knausgård review – a visionary epic,-0.9776,Negative
+01/10/2024,Books,Ross Raisin’s Ghost Kitchen wins 2024 BBC national short story award with dark gig economy tale – read it here,0.999,Positive
+01/10/2024,Books,‘I want space for jokes’: how film-maker Iryna Tsilyk captures surreal life in Ukraine,-0.9877,Negative
+01/10/2024,Books,Salman Rushdie and Miranda July among National Book award finalists,0.9955,Positive
+01/10/2024,Books,What we’re reading: writers and readers on the books they enjoyed in September,0.9883,Positive
+01/10/2024,Books,TS Eliot prize for poetry shortlist contains ‘a strong strain of elegy’,0.9959,Positive
+01/10/2024,Books,Crime and thrillers of the month – review,-0.9961,Negative
+01/10/2024,Books,The Strangers by Ekow Eshun review – inside the minds of extraordinary Black men,0.9905,Positive
+28/10/2024,Books,"Sally Rooney, Rachel Kushner and Arundhati Roy call for boycott of Israeli cultural institutions",0.9747,Positive
+28/10/2024,Books,Highways and Byways by Jimmy Barnes review – compassionate collection from a master yarnsmith,0.9864,Positive
+28/10/2024,Books,Novelist and poet Paul Bailey dies at 87,0.9904,Positive
+28/10/2024,Books,The big idea: how games can change your life,0.9993,Positive
+28/10/2024,Books,Poem of the week: from At the Dimensional Border by Philip Fried,0.9709,Positive
+28/10/2024,Books,The Hotel by Daisy Johnson review – eerie and elegant gothic tales,0.8949,Positive
+28/10/2024,Books,"Shattered by Hanif Kureishi review – broken, bedbound, but unbowed",0.8532,Positive
+28/10/2024,Books,"Tove Jansson murals, with hidden Moomins, seen for first time in Helsinki show",0.924,Positive
+28/10/2024,Books,The stoicism secret: how Ryan Holiday became a Silicon Valley guru,0.9998,Positive
+11/10/2024,Books,Too young for Tolkien’s Lord of the Rings | Letters,0.9463,Positive
+11/10/2024,Books,Han Kang’s books sell out as South Korea celebrates her Nobel prize in literature,0.9986,Positive
+11/10/2024,Books,How to put your phone down and get back into habit of reading books,0.998,Positive
+11/10/2024,Books,"The best recent science fiction, horror and fantasy – reviews roundup",-0.9688,Negative
+11/10/2024,Books,"May Day by Jackie Kay audiobook review – family, love and activism",-0.2359,Negative
+11/10/2024,Books,‘I love the whole atmosphere and can spend hours browsing’: how did bookshops suddenly become cool?,0.9985,Positive
+11/10/2024,Books,Tell us: what does Nobel laureate Han Kang’s literature mean to you?,-0.3736,Negative
+11/10/2024,Books,Stephen King: ‘I loved Lord of the Flies the way kids love Harry Potter’,0.6917,Positive
+11/10/2024,Books,The Book of Abba by Jan Gradvall review – dark backstories and new revelations,-0.9715,Negative
+30/10/2024,Books,Tell us: what have you been reading this month?,0.9005,Positive
+30/10/2024,Books,‘Sex writing feels less cringe now’: are we entering a new era of erotic literature?,0.9982,Positive
+30/10/2024,Books,Shattered by Hanif Kureishi review – picking up the pieces,-0.9767,Negative
+30/10/2024,Books,Absolution by Jeff VanderMeer review – a thrilling coda to an otherworldly trilogy,-0.1424,Negative
+30/10/2024,Books,Breakthrough by William Pao review – the drugs do work,0.9639,Positive
+16/10/2024,Books,Heinz-Peter King obituary,-0.1635,Negative
+16/10/2024,Books,"Pope Francis to publish Hope, the first memoir from a sitting pontiff",0.996,Positive
+16/10/2024,Books,The secret to Pride and Prejudice’s enduring appeal? Lizzy Bennet has game,0.9979,Positive
+16/10/2024,Books,The Scapegoat by Lucy Hughes-Hallett review – James I’s beloved bedfellow,0.9942,Positive
+16/10/2024,Books,Edith Holler by Edward Carey review – an unsettling fairytale,-0.9609,Negative
+16/10/2024,Books,Sonny Boy: A Memoir by Al Pacino review – from fish out of water to Hollywood star,0.9701,Positive
+21/10/2024,Books,My week at Kanye’s: John Safran on his time squatting in the rapper’s mansion,0.9963,Positive
+21/10/2024,Books,The big idea: is nostalgia killing politics? ,0.9974,Positive
+21/10/2024,Books,Poem of the week: The Hottentot Venus Hails Botticelli’s on the High Seas by Dzifa Benson,-0.9822,Negative
+21/10/2024,Books,Gliff by Ali Smith review – a warning from the near future,-0.9612,Negative
+21/10/2024,Books,"In One Ear by Simon Raymonde review – life with the magical, mysterious Cocteau Twins",0.9958,Positive
+12/10/2024,Books,Helen Castor: ‘I’d rather not live in such interesting times’,0.9994,Positive
+12/10/2024,Books, ‘I need positive things to come of this’: graphic novelist rocked by brother’s suicide donates profits to charity,-0.9675,Negative
+12/10/2024,Books,‘I had a crush on him’: Bernardine Evaristo on writing Mr Loverman,0.9878,Positive
+12/10/2024,Books,The Great When by Alan Moore review – a riotous tour of occult London,0.9854,Positive
+12/10/2024,Books,"‘My body is broken, but I’m not going to give up’: Hanif Kureishi on life after the accident that paralysed him ",0.9993,Positive
+14/10/2024,Books,‘It was a deflating experience’: the novelists who nearly gave up,0.9978,Positive
+14/10/2024,Books,Dusk by Robbie Arnott review – big cat hunters become the hunted in beautiful Tasmanian western ,-0.8751,Negative
+14/10/2024,Books,The big idea: why it’s OK not to love your job,0.9993,Positive
+14/10/2024,Books,Poem of the week: The Silent Space by Adrian Rice,0.9712,Positive
+14/10/2024,Books,A Sunny Place for Shady People by Mariana Enriquez review – domestic goddess of grotesque tales,-0.9909,Negative
+14/10/2024,Books,The Use of Photography by Annie Ernaux and Marc Marie review – snapshots of intimacy,0.2891,Positive
+09/10/2024,Books,By Any Other Name by Jodi Picoult review – Shakespeare was a woman,0.9938,Positive
+09/10/2024,Books,First editions of all Jane Austen’s novels to go on display at author’s house,0.9779,Positive
+09/10/2024,Books,England: A Natural History by John Lewis-Stempel review – an amiable ramble,0.9968,Positive
+09/10/2024,Books,All the Rage by Josh Cohen review – seeing red ,-0.9993,Negative
